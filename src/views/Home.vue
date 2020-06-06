@@ -1,7 +1,7 @@
 <template>
   <div class="home" id="home">
     <!-- Home Header -->
-    <h3 class="mt-5 md-3 text-center">RECENT BLOGS</h3>
+    <h3 class="mt-5 md-3 text-center">RECENT BLOGS All Blogs</h3>
     <!-- Display Recents on the Home -->
     <HomePost v-bind:posts="posts" />
     <!-- Button to explore more posts -->
