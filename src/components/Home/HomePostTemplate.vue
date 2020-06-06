@@ -50,11 +50,14 @@
                 </small>
                 <!-- Like Button -->
                 <small class="like-btn col-4 text-right text-muted">
-                  452
+                  {{ likeCount }}
                   <i
                     class="fas fa-heart fa-lg"
                     :class="{ liked: isLiked }"
-                    v-on:click="isLiked = !isLiked"
+                    v-on:click="
+                      toggleLike();
+                      likeCounter();
+                    "
                   ></i>
                 </small>
               </div>
@@ -69,15 +72,30 @@
 <script>
 export default {
   components: {},
-  props: ["post"],
+  props: ["post", "likeCount"],
   data() {
     return {
-      isLiked: false
+      isLiked: false,
+      counts: 0
     };
   },
   methods: {
     toggleLike: function() {
-      this.isLiked = !this.liked;
+      this.isLiked = !this.isLiked;
+    },
+    likeCounter: function() {
+      var count = this.likeCount;
+      console.log(count);
+      // count++;
+      // console.log(count);
+      console.log(count);
+      if (this.isLiked === true) {
+        count++;
+      }
+      else {
+        count--;
+      }
+      this.$emit("like-count", count);
     }
   }
 };

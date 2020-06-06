@@ -1,9 +1,15 @@
 <template>
   <div class="home" id="home">
     <!-- Home Header -->
-    <h3 class="mt-5 md-3 text-center">RECENT BLOGS All Blogs</h3>
+    <h3 class="mt-5 md-3 text-center">RECENT BLOGS</h3>
+
     <!-- Display Recents on the Home -->
-    <HomePost v-bind:posts="posts" />
+    <HomePost
+      v-bind:posts="posts"
+      :likeCount="likeCount"
+      v-on:like-count="countLike($event)"
+    />
+
     <!-- Button to explore more posts -->
     <div class="go-to-blogs text-right mx-auto mb-5">
       <a class="link" href="/blog">
@@ -22,7 +28,13 @@ export default {
   components: {
     HomePost
   },
-  props: ["posts"]
+  props: ["posts", "likeCount"],
+  methods: {
+    countLike: function(count) {
+      let counts = count;
+      this.$emit("like-count", counts);
+    }
+  }
 };
 </script>
 

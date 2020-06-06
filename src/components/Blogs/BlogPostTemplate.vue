@@ -73,7 +73,12 @@
 
 <script>
 export default {
-  props: ["post"]
+  props: ["post"],
+  data() {
+    return {
+      isLiked: false
+    };
+  }
 };
 </script>
 

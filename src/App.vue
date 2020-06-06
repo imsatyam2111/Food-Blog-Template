@@ -3,23 +3,32 @@
   <div id="main-app" class="container">
     <!-- layout: Main Navigation Component -->
     <NavigationMain />
+
     <!-- Layout: Header for the page -->
     <Header />
-    <!-- All the routes to display here under the Header componente -->
-    <router-view v-bind:posts="posts" />
+
+    <!-- route view will display here under the Header component -->
+    <router-view
+      v-bind:posts="posts"
+      :likeCount="likeCount"
+      v-on:like-count="updateLikeCount($event)"
+    />
+
     <!-- Subscription for layout -->
     <Subscribe />
+
     <!-- Button to go to top of the page -->
     <div class="go-to-top p-2">
       <a href="#main-app"><i class="fas fa-angle-up fa-2x"></i></a>
     </div>
   </div>
 </template>
+
 <script>
 import Header from "@/components/layout/Header.vue";
 import NavigationMain from "@/components/layout/NavigationMain.vue";
-
 import Subscribe from "@/components/Subscribe.vue";
+
 export default {
   components: {
     NavigationMain,
@@ -119,8 +128,14 @@ export default {
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`
         }
-      ]
+      ],
+      likeCount: 350
     };
+  },
+  methods: {
+    updateLikeCount: function(count) {
+      this.likeCount = count;
+    }
   }
 };
 </script>
