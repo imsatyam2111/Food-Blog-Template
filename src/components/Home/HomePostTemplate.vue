@@ -75,8 +75,7 @@ export default {
   props: ["post", "likeCount"],
   data() {
     return {
-      isLiked: false,
-      counts: 0
+      isLiked: false
     };
   },
   methods: {
@@ -108,8 +107,12 @@ export default {
 .card-body {
   width: 80%;
 }
+.card-img {
+  cursor: pointer;
+}
 .card-body h4:hover {
   color: #03a5fc;
+  cursor: pointer;
 }
 .views {
   cursor: default;

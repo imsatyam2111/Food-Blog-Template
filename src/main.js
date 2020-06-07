@@ -10,15 +10,15 @@ new Vue({
 }).$mount("#app");
 
 // Function to display go-to-top button scroll
-const scrollbtn = document.querySelector(".go-to-top");
+const scrollBtn = document.querySelector(".go-to-top");
 
-window.onscroll = function() {
+window.onscroll = () => {
   scrollFunction();
 };
 function scrollFunction() {
   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    scrollbtn.style.display = "block";
+    scrollBtn.style.display = "block";
   } else {
-    scrollbtn.style.display = "none";
+    scrollBtn.style.display = "none";
   }
 }

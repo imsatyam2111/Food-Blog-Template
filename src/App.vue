@@ -189,15 +189,14 @@ button:focus {
 }
 /* Scroll Button */
 div.go-to-top {
+  display: none;
   background: #d456a4;
   position: fixed;
   top: 88vh;
   left: 94vw;
   border-radius: 5px;
-  -webkit-transform: rotate(-20deg);
-  -moz-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg); /* IE 9 */
-  transform: rotate(-20deg);
+  -ms-transform: rotate(-15deg); /* IE 9 */
+  transform: rotate(-15deg);
   transition: 0.3s;
   box-shadow: 0 8px 15px #000;
 }

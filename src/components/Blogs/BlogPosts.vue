@@ -2,7 +2,11 @@
   <div class="blog-posts">
     <div class="all-posts row mt-4">
       <div class="col-lg-6 mb-4" v-for="post in posts" :key="post.id">
-        <BlogPostTemplate :post="post" />
+        <BlogPostTemplate
+          v-bind:post="post"
+          v-bind:likeCount="likeCount"
+          v-on:like-count="countLike"
+        />
       </div>
     </div>
   </div>
@@ -14,11 +18,16 @@ export default {
   components: {
     BlogPostTemplate
   },
-  props: ["posts", "texts"],
+  props: ["posts", "likeCount"],
   data() {
-    return {
-      isCalled: false
-    };
+    return {};
+  },
+  methods: {
+    countLike: function(count) {
+      //emit like counts from Blog-Post-Template to parent (Blog)
+      let counts = count;
+      this.$emit("like-count", counts);
+    }
   }
 };
 </script>

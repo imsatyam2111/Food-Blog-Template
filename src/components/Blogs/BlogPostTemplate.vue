@@ -57,11 +57,19 @@
             </small>
             <!-- Like Button -->
             <small class="like-btn col-4 text-right text-muted">
-              452
+              {{ count }}
               <i
                 class="fas fa-heart fa-lg"
                 :class="{ liked: isLiked }"
-                v-on:click="isLiked = !isLiked"
+                v-on:click="
+                  toggleLike();
+                  getLiked(post.id);
+                "
+                v-on="
+                  0 == 0
+                    ? { click: () => likeCounter() }
+                    : { click: $event => $event.preventDefault() }
+                "
               ></i>
             </small>
           </div>
@@ -73,11 +81,40 @@
 
 <script>
 export default {
-  props: ["post"],
+  props: ["post", "likeCount"],
   data() {
     return {
-      isLiked: false
+      isLiked: false,
+      count: 100,
+      gotLiked: 0
     };
+  },
+  methods: {
+    toggleLike: function() {
+      this.isLiked = !this.isLiked;
+    },
+    getLiked: function(id) {
+      console.log(id);
+      console.log("before assingment " + this.gotLiked);
+      console.log("Id assigned");
+      this.gotLiked = id;
+      console.log("after assingment " + this.gotLiked);
+    },
+    likeCounter: function() {
+      // var count = this.likeCount;
+      // console.log(count);
+      if (this.isLiked === true) {
+        this.count++;
+      } else {
+        this.count--;
+      }
+
+      // Send this to parent (Blog-Posts)
+      // this.$emit("like-count", count);
+    },
+    clickMethod: () => {
+      console.log("successful")
+    }
   }
 };
 </script>
@@ -85,6 +122,10 @@ export default {
 <style scoped>
 .card-body h4 span:hover {
   color: #03a5fc;
+}
+.card-img-top,
+h4.card-title {
+  cursor: pointer;
 }
 .views {
   cursor: default;

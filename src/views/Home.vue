@@ -48,7 +48,7 @@ export default {
 .go-to-blogs a button {
   background: #472f99;
   color: #fff;
-  border-color: #472f99;
+  border: 2px solid #472f99;
   transition: 0.4s;
   cursor: pointer;
 }

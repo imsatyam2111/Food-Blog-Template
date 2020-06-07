@@ -22,11 +22,6 @@ export default {
     HomePostTemplate
   },
   props: ["posts", "likeCount"],
-  // data() {
-  //   return {
-  //     isLiked: false
-  //   };
-  // },
   methods: {
     countLike: function(count) {
       let counts = count;
