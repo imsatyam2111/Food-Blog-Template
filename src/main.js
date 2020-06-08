@@ -9,8 +9,8 @@ new Vue({
   render: h => h(App)
 }).$mount("#app");
 
-// Function to display go-to-top button scroll
-const scrollBtn = document.querySelector(".go-to-top");
+// Function to display scroll-to-top button on scroll
+const scrollBtn = document.querySelector(".scroll-to-top");
 
 window.onscroll = () => {
   scrollFunction();

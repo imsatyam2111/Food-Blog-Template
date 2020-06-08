@@ -14,7 +14,7 @@
     <Subscribe />
 
     <!-- Button to go to top of the page -->
-    <div class="go-to-top p-2">
+    <div class="scroll-to-top p-2">
       <a href="#main-app"><i class="fas fa-angle-up fa-2x"></i></a>
     </div>
   </div>
@@ -196,7 +196,7 @@ button:focus {
   outline: none;
 }
 /* Scroll Button */
-div.go-to-top {
+div.scroll-to-top {
   display: none;
   background: #d456a4;
   position: fixed;
@@ -206,29 +206,29 @@ div.go-to-top {
   -ms-transform: rotate(-15deg); /* IE 9 */
   transform: rotate(-15deg);
   transition: 0.3s;
-  box-shadow: 0 8px 15px #000;
+  box-shadow: 0 8px 8px rgb(102, 101, 101);
 }
-div.go-to-top:hover {
+div.scroll-to-top:hover {
   transform: rotate(0deg);
   box-shadow: none;
 }
 @media (max-width: 768px) {
-  div.go-to-top {
+  div.scroll-to-top {
     left: 93vw;
   }
 }
 @media (max-width: 512px) {
-  div.go-to-top {
+  div.scroll-to-top {
     transform: rotate(0);
     left: 88vw;
   }
 }
 @media (max-width: 376px) {
-  div.go-to-top {
+  div.scroll-to-top {
     left: 87vw;
   }
 }
-.go-to-top a {
+.scroll-to-top a {
   text-decoration: none;
   color: #fff;
 }
