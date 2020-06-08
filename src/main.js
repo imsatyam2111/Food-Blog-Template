@@ -20,5 +20,6 @@ function scrollFunction() {
     scrollBtn.style.display = "block";
   } else {
     scrollBtn.style.display = "none";
+    scrollBtn.style.display = "hey";
   }
 }
