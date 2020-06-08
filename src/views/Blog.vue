@@ -4,11 +4,9 @@
     <!-- Different Categories in Blog -->
     <BlogCategories />
     <!-- All the Blogs -->
-    <BlogPosts
-      v-bind:posts="posts"
-      v-bind:likeCount="likeCount"
-      v-on:like-count="countLike"
-    />
+    <keep-alive>
+      <BlogPosts v-bind:posts="posts" />
+    </keep-alive>
   </div>
 </template>
 
@@ -21,17 +19,11 @@ export default {
     BlogCategories,
     BlogPosts
   },
-  props: ["posts", "likeCount"],
+  props: ["posts"],
   data() {
     return {};
   },
-  methods: {
-    countLike: function(count) {
-      // emit counts from Blog-Post to Blog-View
-      let counts = count;
-      this.$emit("like-count", counts);
-    }
-  }
+  methods: {}
 };
 </script>
 

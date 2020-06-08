@@ -57,17 +57,14 @@
             </small>
             <!-- Like Button -->
             <small class="like-btn col-4 text-right text-muted">
-              {{ count }}
+              {{ post.likes }}
               <i
                 class="fas fa-heart fa-lg"
-                :class="{ liked: isLiked }"
-                v-on:click="
-                  toggleLike();
-                  getLiked(post.id);
-                "
+                :class="{ liked: post.isLiked }"
+                v-on:click="toggleLike()"
                 v-on="
-                  0 == 0
-                    ? { click: () => likeCounter() }
+                  1 == 1
+                    ? { click: () => updateLikeCounts() }
                     : { click: $event => $event.preventDefault() }
                 "
               ></i>
@@ -83,37 +80,24 @@
 export default {
   props: ["post", "likeCount"],
   data() {
-    return {
-      isLiked: false,
-      count: 100,
-      gotLiked: 0
-    };
+    return {};
   },
   methods: {
     toggleLike: function() {
-      this.isLiked = !this.isLiked;
+      this.post.isLiked = !this.post.isLiked;
     },
-    getLiked: function(id) {
-      console.log(id);
-      console.log("before assingment " + this.gotLiked);
-      console.log("Id assigned");
-      this.gotLiked = id;
-      console.log("after assingment " + this.gotLiked);
-    },
-    likeCounter: function() {
-      // var count = this.likeCount;
-      // console.log(count);
-      if (this.isLiked === true) {
-        this.count++;
-      } else {
-        this.count--;
-      }
 
-      // Send this to parent (Blog-Posts)
-      // this.$emit("like-count", count);
-    },
-    clickMethod: () => {
-      console.log("successful")
+    // Implement like counts
+    updateLikeCounts: function() {
+      console.log("likeCounter funciton called");
+      console.log("post liked ? " + this.post.isLiked);
+
+      this.post.title = "Hello World";
+      if (this.post.isLiked === true) {
+        this.post.likes++;
+      } else {
+        this.post.likes--;
+      }
     }
   }
 };

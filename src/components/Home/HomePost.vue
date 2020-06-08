@@ -4,11 +4,7 @@
     <div v-for="post in posts" :key="post.id">
       <!-- Show only 4 posts on the homepage -->
       <div v-if="post.id <= 4">
-        <HomePostTemplate
-          :post="post"
-          :likeCount="likeCount"
-          v-on:like-count="countLike($event)"
-        />
+        <HomePostTemplate :post="post" />
       </div>
     </div>
   </div>
@@ -21,13 +17,7 @@ export default {
   components: {
     HomePostTemplate
   },
-  props: ["posts", "likeCount"],
-  methods: {
-    countLike: function(count) {
-      let counts = count;
-      this.$emit("like-count", counts);
-    }
-  }
+  props: ["posts"]
 };
 </script>
 
