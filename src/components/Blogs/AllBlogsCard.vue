@@ -2,17 +2,17 @@
   <div class="blog-posts">
     <div class="all-posts row mt-4">
       <div class="col-lg-6 mb-4" v-for="post in posts" :key="post.id">
-        <BlogPostTemplate v-bind:post="post" />
+        <BlogPostCardTemplate v-bind:post="post" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import BlogPostTemplate from "@/components/Blogs/BlogPostTemplate.vue";
+import BlogPostCardTemplate from "@/components/Blogs/BlogPostCardTemplate.vue";
 export default {
   components: {
-    BlogPostTemplate
+    BlogPostCardTemplate
   },
   props: ["posts"],
   data() {

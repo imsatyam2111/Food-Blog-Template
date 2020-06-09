@@ -78,7 +78,7 @@
 
 <script>
 export default {
-  props: ["post", "likeCount"],
+  props: ["post"],
   data() {
     return {};
   },
@@ -89,10 +89,6 @@ export default {
 
     // Implement like counts
     updateLikeCounts: function() {
-      console.log("likeCounter funciton called");
-      console.log("post liked ? " + this.post.isLiked);
-
-      this.post.title = "Hello World";
       if (this.post.isLiked === true) {
         this.post.likes++;
       } else {

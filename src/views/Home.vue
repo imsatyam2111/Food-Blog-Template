@@ -5,12 +5,12 @@
 
     <!-- Display Recents on the Home -->
     <keep-alive>
-      <HomePost v-bind:posts="posts" />
+      <HomePostsCards v-bind:posts="posts" />
     </keep-alive>
 
     <!-- Button to explore more posts -->
     <div class="go-to-blogs text-right mx-auto mb-5">
-      <a class="link" href="/blog">
+      <a class="link" href="/blog#blog-category">
         <button class="py-2 px-3 ">See More</button>
       </a>
     </div>
@@ -19,12 +19,12 @@
 
 <script>
 // @ is an alias to /src
-import HomePost from "@/components/Home/HomePost.vue";
+import HomePostsCards from "@/components/Home/HomePostsCards.vue";
 
 export default {
   name: "Home",
   components: {
-    HomePost
+    HomePostsCards
   },
   props: ["posts"]
 };

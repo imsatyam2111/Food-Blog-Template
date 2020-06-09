@@ -81,10 +81,6 @@ export default {
       this.post.isLiked = !this.post.isLiked;
     },
     updateLikeCounts: function() {
-      console.log("likeCounter funciton called");
-      console.log("post liked ? " + this.post.isLiked);
-
-      this.post.title = "Hello World";
       if (this.post.isLiked === true) {
         this.post.likes++;
       } else {

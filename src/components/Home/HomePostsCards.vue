@@ -4,18 +4,18 @@
     <div v-for="post in posts" :key="post.id">
       <!-- Show only 4 posts on the homepage -->
       <div v-if="post.id <= 4">
-        <HomePostTemplate :post="post" />
+        <HomePostCardTemplate :post="post" />
       </div>
     </div>
   </div>
 </template>
 
 <script>
-import HomePostTemplate from "@/components/Home/HomePostTemplate";
+import HomePostCardTemplate from "@/components/Home/HomePostCardTemplate";
 
 export default {
   components: {
-    HomePostTemplate
+    HomePostCardTemplate
   },
   props: ["posts"]
 };
