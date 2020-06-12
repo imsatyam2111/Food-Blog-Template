@@ -22,7 +22,13 @@ const routes = [
   {
     path: "/blog",
     name: "Blog",
-    component: () => import("../views/Blog.vue"),
+    component: () => import("../views/Blog.vue")
+  },
+  {
+    path: "/single-blog/:PId",
+    name: "Single-Blog",
+    component: () => import("../components/singleBlog.vue"),
+    props: {default: true}
   }
 ];
 

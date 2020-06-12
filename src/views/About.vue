@@ -1,5 +1,6 @@
 <template>
   <div class="about mx-auto mt-5" style="width: 90%;">
+    <h1>{{Hell}}</h1>
     <AboutMe />
     <ContactMe />
   </div>
@@ -12,7 +13,8 @@ export default {
   components: {
     AboutMe,
     ContactMe
-  }
+  },
+  props: ["Hell"]
 };
 </script>
 

@@ -38,109 +38,118 @@ export default {
           id: 1,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 1",
-          category: "veg",
+          category: "vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 479
         },
         {
           id: 2,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 2",
-          category: "non-veg",
+          category: "non-vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 959
         },
         {
           id: 3,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 3",
-          category: "non-veg",
+          category: "non-vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 226
         },
         {
           id: 4,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 4",
-          category: "non-veg",
+          category: "non-vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 74
         },
         {
           id: 5,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 5",
-          category: "veg",
+          category: "vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 512
         },
         {
           id: 6,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 6",
-          category: "non-veg",
+          category: "non-vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 1426
         },
         {
           id: 7,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 7",
-          category: "veg",
+          category: "vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 741
         },
         {
           id: 8,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 8",
-          category: "veg",
+          category: "vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 459
         },
         {
           id: 9,
           source: "../assets/blogPost/dummy2.jpg",
           title: "Post 9",
-          category: "non-veg",
+          category: "non-vegetarian",
           description:
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero.",
           content: `Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Neque laoreet suspendisse interdum consectetur libero. Vitae nunc sed velit dignissim. Enim blandit volutpat maecenas volutpat blandit. Duis at tellus at urna. Aliquet sagittis id consectetur purus ut faucibus pulvinar elementum. Interdum velit euismod in pellentesque. Risus pretium quam vulputate dignissim suspendisse in est ante in. Fringilla ut morbi tincidunt augue interdum. Iaculis nunc sed augue lacus viverra vitae congue eu. Ut faucibus pulvinar elementum integer enim neque volutpat. Pharetra pharetra massa massa ultricies mi quis. Lacus luctus accumsan tortor posuere ac ut consequat semper viverra. Ligula ullamcorper malesuada proin libero nunc consequat interdum varius. Dolor magna eget est lorem ipsum dolor sit amet. Id diam maecenas ultricies mi. Ut enim blandit volutpat maecenas volutpat blandit aliquam. Quisque sagittis purus sit amet volutpat consequat mauris nunc congue. In aliquam sem fringilla ut morbi tincidunt augue interdum velit.
             Vitae turpis massa sed elementum tempus egestas. Amet luctus venenatis lectus magna fringilla urna. Imperdiet nulla malesuada pellentesque elit eget. Cursus euismod quis viverra nibh cras pulvinar mattis nunc. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt tortor. Viverra nibh cras pulvinar mattis nunc sed. Quisque id diam vel quam elementum pulvinar etiam non quam. Eros in cursus turpis massa tincidunt. Sit amet porttitor eget dolor morbi non arcu risus. Elit duis tristique sollicitudin nibh. Sit amet consectetur adipiscing elit. Mi eget mauris pharetra et ultrices neque ornare. Tempor id eu nisl nunc mi. Rhoncus est pellentesque elit ullamcorper dignissim. Sed felis eget velit aliquet sagittis id consectetur. Dictumst vestibulum rhoncus est pellentesque. Purus in mollis nunc sed id semper risus in. Aenean sed adipiscing diam donec adipiscing tristique risus nec feugiat. Sit amet luctus venenatis lectus.`,
           isLiked: false,
-          likes: 100
+          likes: 100,
+          views: 209
         }
       ]
     };

@@ -26,7 +26,11 @@
                 <small class="text-muted">May 29 | 3 mins ago</small>
               </p>
               <!-- Blog Card Heading -->
-              <h4>{{ post.title }}</h4>
+              <router-link
+                :to="{ name: 'Single-Blog', params: { PId: post.id } }"
+              >
+                <h4>{{ post.title }}</h4>
+              </router-link>
               <!-- Card Text -->
               <p class="card-text post-description m-0">
                 {{ post.description }}
@@ -86,6 +90,9 @@ export default {
       } else {
         this.post.likes--;
       }
+    },
+    goToArticle: function() {
+      this.$router.push({ name: "details" });
     }
   }
 };
