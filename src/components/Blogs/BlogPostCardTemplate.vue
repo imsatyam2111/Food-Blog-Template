@@ -30,9 +30,9 @@
           </div>
 
           <!-- Card Blog-Titile -->
-          <h4 class="card-title my-3">
-            <span>{{ post.title }}</span>
-          </h4>
+          <router-link :to="{ name: 'Single-Blog', params: { PId: post.id } }">
+            <h4>{{ post.title }}</h4>
+          </router-link>
           <!-- Blog Description -->
           <p class="card-text">
             {{ post.description }}

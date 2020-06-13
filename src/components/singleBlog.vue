@@ -25,33 +25,42 @@
               </div>
               <p class="content mt-3">{{ singleBlog.content }}</p>
 
-              <div class="blog-info mt-5 pb-1 pt-2 row">
-                <div class="views col-6 text-muted">
-                  <span>{{ singleBlog.views }} Views</span>
+              <div
+                style="height:0.1px; background: #727379; margin-top: 80px;"
+              ></div>
+
+              <div class="blog-info mb-2 pb-1 pt-2 row align-items-center">
+                <div class="views col-6 text-muted pl-3">
+                  <span style="font-size: 12px;">{{ singleBlog.views }}</span>
+                  <span> views</span>
                 </div>
-                <div class="category col-6 pr-0">
+
+                <div class="category col-6 pr-3">
                   <span class="float-right">{{ singleBlog.category }}</span>
                 </div>
               </div>
 
-              <div class="action-bar mt-4 row">
-                <div class="like-btn col-sm-6 text-muted">
+              <div style="height:1px; background: #727379; "></div>
+
+              <div class="action-bar mt-2 row">
+                <div class="like-btn col-sm-6 text-muted pl-3">
                   <span>{{ singleBlog.likes }} </span>
                   <i
                     class="fas fa-heart fa-lg"
                     :class="{ liked: singleBlog.isLiked }"
                     v-on:click="
-                      toggleLike();
-                      updateLikeCounts();
+                      toggleLike(singleBlog.isLiked);
+                      updateLikeCounts(singleBlog.isLiked);
                     "
                   ></i>
                 </div>
-                <div class="follow-btn  col-sm-6 pr-0">
+
+                <div class="follow-btn  col-sm-6 pr-3">
                   <div class="social-icons float-right">
-                    <a href="#"><i class="fab fa-instagram pr-3"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f pr-3"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p pr-3"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram pr-4"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f pr-4 pl-2"></i></a>
+                    <a href="#"><i class="fab fa-pinterest-p pr-4 pl-2"></i></a>
+                    <a href="#"><i class="fab fa-twitter pl-2"></i></a>
                   </div>
                 </div>
               </div>
@@ -60,20 +69,27 @@
         </div>
       </div>
     </div>
+
+    <div class="comments mt-4">
+      <comments v-bind:singleBlog="singleBlog" />
+    </div>
   </div>
 </template>
 <script>
+import Comments from "@/components/Comments.vue";
+
 export default {
   name: "Single-Blog",
+  components: {
+    Comments
+  },
   props: ["posts"],
   data() {
-    return {
-      title: "details"
-    };
+    return {};
   },
   methods: {
-    toggleLike: function() {
-      this.singleBlog.isLiked = !this.singleBlog.isLiked;
+    toggleLike: function(singleBlog) {
+      singleBlog.isLiked = !singleBlog.isLiked;
     },
     updateLikeCounts: function() {
       if (this.singleBlog.isLiked === true) {
@@ -97,10 +113,20 @@ export default {
 }
 .category > span {
   padding: 3px 6px;
-  background: rgb(185, 179, 179);
+  background: rgb(221, 211, 211);
   border-radius: 4px;
   font-weight: 400;
   color: #727379;
+}
+.like-btn {
+  font-size: 14px;
+}
+.like-btn > i {
+  font-size: 14px;
+  padding-left: 2px;
+}
+.liked {
+  color: red;
 }
 @media (min-width: 769px) {
   img {
