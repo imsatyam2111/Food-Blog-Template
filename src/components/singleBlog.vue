@@ -1,5 +1,5 @@
 <template>
-  <div class="singleBlog container mt-5 mb-4">
+  <div id="singleBlog" class="singleBlog container mt-5 mb-4">
     <div v-for="singleBlog in posts" :key="singleBlog.id">
       <div v-if="$route.params.PId == singleBlog.id">
         <div class="post-container border p-5 mx-auto w-100">

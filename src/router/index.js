@@ -25,7 +25,7 @@ const routes = [
     component: () => import("../views/Blog.vue")
   },
   {
-    path: "/single-blog/:PId",
+    path: "/single-blog/:PId/#singleBlog",
     name: "Single-Blog",
     component: () => import("../components/singleBlog.vue"),
     props: { default: true }

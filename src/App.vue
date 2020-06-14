@@ -178,7 +178,9 @@ a:hover {
   color: #000;
   text-decoration: none;
 }
-
+.card:hover {
+  cursor: pointer;
+}
 input:focus,
 textarea:focus {
   background: rgb(240, 230, 230);
