@@ -1,11 +1,11 @@
 <template>
   <div id="singleBlog" class="singleBlog container mt-5 mb-4">
-    <div v-for="singleBlog in posts" :key="singleBlog.id">
+    <div class="" v-for="singleBlog in posts" :key="singleBlog.id">
       <div v-if="$route.params.PId == singleBlog.id">
-        <div class="post-container border p-5 mx-auto w-100">
+        <div class="post-container border p-lg-5 mx-auto w-100">
           <div class="mx-auto" style="width=80%;">
             <div>
-              <h1 class="text-center mb-lg-5">
+              <h1 class="text-center mt-2 mb-3 mt-lg-0 mb-lg-5">
                 <strong>{{ singleBlog.title }}</strong>
               </h1>
             </div>
@@ -16,7 +16,7 @@
                 alt=""
               />
             </div>
-            <div class="mx-auto" style="width:80%">
+            <div class="content-container mx-auto">
               <blockquote class="mt-4 mb-3">
                 <strong>{{ singleBlog.description }}</strong>
               </blockquote>
@@ -26,7 +26,8 @@
               <p class="content mt-3">{{ singleBlog.content }}</p>
 
               <div
-                style="height:0.1px; background: #727379; margin-top: 80px;"
+                class="mt-5"
+                style="height:0.1px; background: #727379;"
               ></div>
 
               <div class="blog-info mb-2 pb-1 pt-2 row align-items-center">
@@ -43,7 +44,7 @@
               <div style="height:1px; background: #727379; "></div>
 
               <div class="action-bar mt-2 row">
-                <div class="like-btn col-sm-6 text-muted pl-3">
+                <div class="like-btn col-4 col-md-6 text-muted pl-3">
                   <span>{{ singleBlog.likes }} </span>
                   <i
                     class="fas fa-heart fa-lg"
@@ -55,12 +56,18 @@
                   ></i>
                 </div>
 
-                <div class="follow-btn  col-sm-6 pr-3">
+                <div class="follow-btn mb-4 mb-lg-0 col-8 col-md-6 pr-3">
                   <div class="social-icons float-right">
-                    <a href="#"><i class="fab fa-instagram pr-4"></i></a>
-                    <a href="#"><i class="fab fa-facebook-f pr-4 pl-2"></i></a>
-                    <a href="#"><i class="fab fa-pinterest-p pr-4 pl-2"></i></a>
-                    <a href="#"><i class="fab fa-twitter pl-2"></i></a>
+                    <a href="#"
+                      ><i class="fab fa-instagram pr-3 pr-md-4"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fab fa-facebook-f pr-3 pr-md-4 pl-md-2"></i
+                    ></a>
+                    <a href="#"
+                      ><i class="fab fa-pinterest-p pr-3 pr-md-4 pl-md-2"></i
+                    ></a>
+                    <a href="#"><i class="fab fa-twitter pl-md-2"></i></a>
                   </div>
                 </div>
               </div>
@@ -69,7 +76,7 @@
         </div>
       </div>
     </div>
-
+    <!-- Comments components -->
     <div class="comments mt-4">
       <comments v-bind:singleBlog="singleBlog" />
     </div>
@@ -105,6 +112,21 @@ export default {
 <style scoped>
 .singleBlog {
   width: 95%;
+}
+@media (max-width: 426px) {
+  .singleBlog {
+    width: 100%;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+}
+.content-container {
+  width: 80%;
+}
+@media (max-width: 426px) {
+  .content-container {
+    width: 90%;
+  }
 }
 .content {
   font-size: 18px;

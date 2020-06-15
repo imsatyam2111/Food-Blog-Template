@@ -131,6 +131,12 @@ textarea {
   border: 1.5px solid rgb(121, 112, 112);
   padding: 5px;
 }
+@media (max-width: 426px) {
+  input,
+  textarea {
+    width: 100%;
+  }
+}
 /* .comment-by {
   color: rgb(175, 160, 160);
 } */

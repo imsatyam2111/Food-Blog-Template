@@ -25,7 +25,7 @@ const routes = [
     component: () => import("../views/Blog.vue")
   },
   {
-    path: "/single-blog/:PId/#singleBlog",
+    path: "/single-blog/#singleBlog/:PId",
     name: "Single-Blog",
     component: () => import("../components/singleBlog.vue"),
     props: { default: true }
@@ -35,7 +35,14 @@ const routes = [
 const router = new VueRouter({
   mode: "history",
   base: process.env.BASE_URL,
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    if (savedPosition) {
+      return savedPosition;
+    } else {
+      return { x: 0, y: 0 };
+    }
+  }
 });
 
 export default router;
