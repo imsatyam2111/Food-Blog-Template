@@ -202,6 +202,11 @@ textarea:valid {
   background: white;
   color: black;
 }
+@media (max-width: 512px) {
+  .btn-form {
+    width: 100%;
+  }
+}
 /* Reset button focus style */
 button:focus {
   outline: none;
@@ -232,6 +237,7 @@ div.scroll-to-top:hover {
   div.scroll-to-top {
     transform: rotate(0);
     left: 88vw;
+    top: 86vh;
   }
 }
 @media (max-width: 376px) {
@@ -242,10 +248,5 @@ div.scroll-to-top:hover {
 .scroll-to-top a {
   text-decoration: none;
   color: #fff;
-}
-@media (max-width: 512px) {
-  .btn-form {
-    width: 100%;
-  }
 }
 </style>

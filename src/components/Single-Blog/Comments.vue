@@ -1,10 +1,9 @@
 <template>
-  <div class="comment-section p-2">
-    <div>
+  <div class="comment-section p-2 mt-5">
+    <div class="mt-4 mb-4">
       <h3>Comments</h3>
     </div>
-    <div class="readers-comment">
-      <p>Readers comments goes here</p>
+    <div class="readers-comment mb-4">
       <!-- Iterate over the comments -->
       <div v-for="eachComment in comments" :key="eachComment.id">
         <!-- User div -->
@@ -23,7 +22,7 @@
     <div class="add-comment">
       <h5>Add a Comment</h5>
       <div class="">
-        <form @submit.prevent="addComment">
+        <form class="mt-4" @submit.prevent="addComment">
           <!-- Input name -->
           <label class="d-block" for="name"
             >Enter Your Name
@@ -76,7 +75,6 @@
 <script>
 export default {
   name: "Comments",
-  props: ["singleBlog"],
   data() {
     return {
       id: 4,

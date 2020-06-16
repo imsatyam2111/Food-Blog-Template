@@ -1,9 +1,12 @@
 <template>
+  <!-- Each Single BLog  -->
   <div id="singleBlog" class="singleBlog container mt-5 mb-4">
+    <!-- Iterating over the posts -->
     <div class="" v-for="singleBlog in posts" :key="singleBlog.id">
       <div v-if="$route.params.PId == singleBlog.id">
         <div class="post-container border p-lg-5 mx-auto w-100">
           <div class="mx-auto" style="width=80%;">
+            <!-- Post Title -->
             <div>
               <h1 class="text-center mt-2 mb-3 mt-lg-0 mb-lg-5">
                 <strong>{{ singleBlog.title }}</strong>
@@ -12,7 +15,7 @@
             <div class="text-center">
               <img
                 class="img-fluid"
-                src="../assets/blogPost/dummy2.jpg"
+                src="../../assets/blogPost/dummy2.jpg"
                 alt=""
               />
             </div>
@@ -44,17 +47,8 @@
               <div style="height:1px; background: #727379; "></div>
 
               <div class="action-bar mt-2 row">
-                <div class="like-btn col-4 col-md-6 text-muted pl-3">
-                  <span>{{ singleBlog.likes }} </span>
-                  <i
-                    class="fas fa-heart fa-lg"
-                    :class="{ liked: singleBlog.isLiked }"
-                    v-on:click="
-                      toggleLike(singleBlog.isLiked);
-                      updateLikeCounts(singleBlog.isLiked);
-                    "
-                  ></i>
-                </div>
+                <!-- Likes Component -->
+                <Likes v-bind:singleBlog="singleBlog" />
 
                 <div class="follow-btn mb-4 mb-lg-0 col-8 col-md-6 pr-3">
                   <div class="social-icons float-right">
@@ -78,34 +72,25 @@
     </div>
     <!-- Comments components -->
     <div class="comments mt-4">
-      <comments v-bind:singleBlog="singleBlog" />
+      <Comments />
     </div>
   </div>
 </template>
 <script>
-import Comments from "@/components/Comments.vue";
+import Likes from "@/components/Single-Blog/Likes.vue";
+import Comments from "@/components/Single-Blog/Comments.vue";
 
 export default {
   name: "Single-Blog",
   components: {
+    Likes,
     Comments
   },
   props: ["posts"],
   data() {
     return {};
   },
-  methods: {
-    toggleLike: function(singleBlog) {
-      singleBlog.isLiked = !singleBlog.isLiked;
-    },
-    updateLikeCounts: function() {
-      if (this.singleBlog.isLiked === true) {
-        this.singleBlog.likes++;
-      } else {
-        this.singleBlog.likes--;
-      }
-    }
-  }
+  methods: {}
 };
 </script>
 

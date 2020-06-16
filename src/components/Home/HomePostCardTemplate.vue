@@ -47,10 +47,14 @@
                 </small>
                 <!-- Add a Comment  -->
                 <small class="comment col-4 text-center  text-muted">
-                  <span class="d-none d-xl-block">Add a comment</span>
-                  <span class="d-xl-none">
-                    <i class="far fa-comment-dots"></i>
-                  </span>
+                  <router-link
+                    :to="{ name: 'Single-Blog', params: { PId: post.id } }"
+                  >
+                    <span class="d-none d-xl-block">Add a comment</span>
+                    <span class="d-xl-none">
+                      <i class="far fa-comment-dots"></i>
+                    </span>
+                  </router-link>
                 </small>
                 <!-- Like Button -->
                 <small class="like-btn col-4 text-right text-muted">

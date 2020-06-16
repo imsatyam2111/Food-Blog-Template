@@ -1,6 +1,7 @@
 <template>
   <div class="container" style="width: 90%;">
     <!-- Bootstarp Responsive Naviation -->
+
     <nav class="navbar navbar-expand-lg navbar-light bg-white px-2 mt-4 mb-3">
       <!-- Hamburger Menu Button -->
       <button
@@ -19,11 +20,11 @@
         id="navbarNavAltMarkup"
       >
         <!-- Routes -->
-        <div class="navbar-nav">
+        <ul class="navbar-nav">
           <router-link class="pr-3 col-xs-12" to="/">Home</router-link>
           <router-link class="pr-3 col-xs-12" to="/blog">Blog</router-link>
           <router-link class="pr-3 col-xs-12" to="/about">About</router-link>
-        </div>
+        </ul>
 
         <!-- Social Navaigation -->
         <div class="navbar-nav">
