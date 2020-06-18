@@ -2,10 +2,12 @@
   <div class="container" style="width: 90%;">
     <!-- Bootstarp Responsive Naviation -->
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-white px-2 mt-4 mb-3">
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white px-2 mt-0 mb-4 mt-lg-4 mb-lg-3"
+    >
       <!-- Hamburger Menu Button -->
       <button
-        class="navbar-toggler"
+        class="navbar-toggler float-left"
         type="button"
         data-toggle="collapse"
         data-target="#navbarNavAltMarkup"
@@ -21,9 +23,15 @@
       >
         <!-- Routes -->
         <ul class="navbar-nav">
-          <router-link class="pr-3 col-xs-12" to="/">Home</router-link>
-          <router-link class="pr-3 col-xs-12" to="/blog">Blog</router-link>
-          <router-link class="pr-3 col-xs-12" to="/about">About</router-link>
+          <router-link class="nav-links p-3 pr-lg-3 col-xs-12" to="/">
+            Home
+          </router-link>
+          <router-link class="nav-links p-3 pr-lg-3 col-xs-12" to="/blog">
+            Blog
+          </router-link>
+          <router-link class="nav-links p-3 pr-lg-3 col-xs-12" to="/about">
+            About
+          </router-link>
         </ul>
 
         <!-- Social Navaigation -->
@@ -41,9 +49,7 @@
 </template>
 
 <script>
-export default {
-  components: {}
-};
+export default {};
 </script>
 
 <style scoped>
@@ -74,5 +80,18 @@ export default {
 }
 .social-icons a .fa-twitter:hover {
   color: #1da1f2;
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+  }
+  .nav-links,
+  .social-icons {
+    text-align: center;
+  }
+  .navbar-toggler {
+    margin-left: 74vw !important;
+  }
 }
 </style>

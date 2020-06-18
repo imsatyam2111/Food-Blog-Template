@@ -5,17 +5,19 @@
     </div>
     <div class="readers-comment mb-4">
       <!-- Iterate over the comments -->
-      <div v-for="eachComment in comments" :key="eachComment.id">
-        <!-- User div -->
-        <div class="comment-by row no-gutters align-items-center text-muted">
-          <i class="fas fa-user-circle pr-2 col-1 col-md-1"></i>
-          <span class="col-11 col-md-11">{{ eachComment.name }}</span>
+      <div v-for="eachComment in comments" :key="eachComment.commentNum">
+        <div v-if="$route.params.PId == eachComment.commentId">
+          <!-- User div -->
+          <div class="comment-by row no-gutters align-items-center text-muted">
+            <i class="fas fa-user-circle pr-2 col-1 col-md-1"></i>
+            <span class="col-11 col-md-11">{{ eachComment.name }}</span>
+          </div>
+          <!-- comment div -->
+          <div class="comment-text mt-2">
+            <span>{{ eachComment.comment }}</span>
+          </div>
+          <br />
         </div>
-        <!-- comment div -->
-        <div class="comment-text mt-2">
-          <span>{{ eachComment.comment }}</span>
-        </div>
-        <br />
       </div>
     </div>
     <!-- Add comment section -->
@@ -77,25 +79,36 @@ export default {
   name: "Comments",
   data() {
     return {
-      id: 4,
+      commentId: 0,
+      commentNum: 5,
       name: "",
       email: "",
       comment: "",
       comments: [
         {
-          id: 1,
+          commentId: 1,
+          commentNum: 1,
           email: "ss1234@gmail.com",
           name: "user 1",
-          comment: "thsi is a comment"
+          comment: "this is a comment"
         },
         {
-          id: 2,
+          commentId: 2,
+          commentNum: 2,
           email: "skj234@gmail.com",
           name: "user 2",
-          comment: "thsi is a comment 2nd"
+          comment: "this is a comment 2nd"
         },
         {
-          id: 3,
+          commentId: 3,
+          commentNum: 3,
+          email: "skj234@gmail.com",
+          name: "user 2",
+          comment: "this is a comment 2nd"
+        },
+        {
+          commentId: 3,
+          commentNum: 4,
           email: "ss12355484@gmail.com",
           name: "user 3",
           comment: "thsi is a comment 3rd"
@@ -104,16 +117,17 @@ export default {
     };
   },
   methods: {
+    // Function to add comment
     addComment: function() {
       const newComment = {
-        id: this.id,
+        commentId: this.$route.params.PId,
+        commentNum: this.commentNum,
         email: this.email,
         name: this.name,
         comment: this.comment
       };
-
       this.comments = [...this.comments, newComment];
-      this.id++;
+      this.commentNum++;
       this.name = "";
       this.email = "";
       this.comment = "";

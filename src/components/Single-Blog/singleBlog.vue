@@ -3,15 +3,19 @@
   <div id="singleBlog" class="singleBlog container mt-5 mb-4">
     <!-- Iterating over the posts -->
     <div class="" v-for="singleBlog in posts" :key="singleBlog.id">
+      <!-- Check if the id of route and blog is same or not -->
       <div v-if="$route.params.PId == singleBlog.id">
+        <!-- Post container starts here -->
         <div class="post-container border p-lg-5 mx-auto w-100">
           <div class="mx-auto" style="width=80%;">
             <!-- Post Title -->
+
             <div>
               <h1 class="text-center mt-2 mb-3 mt-lg-0 mb-lg-5">
                 <strong>{{ singleBlog.title }}</strong>
               </h1>
             </div>
+
             <div class="text-center">
               <img
                 class="img-fluid"
@@ -19,6 +23,7 @@
                 alt=""
               />
             </div>
+
             <div class="content-container mx-auto">
               <blockquote class="mt-4 mb-3">
                 <strong>{{ singleBlog.description }}</strong>
@@ -50,6 +55,7 @@
                 <!-- Likes Component -->
                 <Likes v-bind:singleBlog="singleBlog" />
 
+                <!-- Follow links -->
                 <div class="follow-btn mb-4 mb-lg-0 col-8 col-md-6 pr-3">
                   <div class="social-icons float-right">
                     <a href="#"
@@ -70,13 +76,18 @@
         </div>
       </div>
     </div>
+
     <!-- Comments components -->
     <div class="comments mt-4">
-      <Comments />
+      <keep-alive>
+        <Comments />
+      </keep-alive>
     </div>
   </div>
 </template>
+
 <script>
+// @ is an alias to src/
 import Likes from "@/components/Single-Blog/Likes.vue";
 import Comments from "@/components/Single-Blog/Comments.vue";
 
@@ -88,9 +99,23 @@ export default {
   },
   props: ["posts"],
   data() {
-    return {};
+    return {
+      tit: "he world"
+    };
   },
-  methods: {}
+  created() {
+    let i;
+    // Dynamically name the Title as of Blog's Name
+    for (i = 0; i < this.posts.length; i++) {
+      if (this.$route.params.PId == i) {
+        for (var x in this.posts[i]) {
+          if (x == "title") {
+            this.$route.meta.title = "The Food Blooger | " + this.posts[i][x];
+          }
+        }
+      }
+    }
+  }
 };
 </script>
 

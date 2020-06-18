@@ -12,8 +12,7 @@ export default {
   components: {
     AboutMe,
     ContactMe
-  },
-  props: ["Hell"]
+  }
 };
 </script>
 

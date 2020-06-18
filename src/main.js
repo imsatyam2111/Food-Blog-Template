@@ -22,3 +22,12 @@ function scrollFunction() {
     scrollBtn.style.display = "none";
   }
 }
+
+// Collapse navigation on clickin the links
+const navContainer = document.querySelector(".navbar-collapse");
+const navItems = document.querySelector(".navbar-nav");
+navItems.addEventListener("click", toggleMenuBtn);
+
+function toggleMenuBtn() {
+  navContainer.classList.remove("show");
+}

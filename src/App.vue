@@ -7,7 +7,7 @@
     <!-- Layout: Header for the page -->
     <Header />
 
-    <!-- route view will display here under the Header component -->
+    <!--All the routes will display here under the Header component -->
     <router-view v-bind:posts="posts" />
 
     <!-- Subscription for layout -->
@@ -181,6 +181,7 @@ a:hover {
 .card:hover {
   cursor: pointer;
 }
+/* Global styles for input,textarea and buttons */
 input:focus,
 textarea:focus {
   background: rgb(240, 230, 230);

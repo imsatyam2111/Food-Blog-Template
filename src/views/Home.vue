@@ -10,9 +10,9 @@
 
     <!-- Button to explore more posts -->
     <div class="go-to-blogs text-right mx-auto mb-5">
-      <a class="link" href="/blog#blog-category">
+      <router-link class="link" to="/blog">
         <button class="py-2 px-3 ">See More</button>
-      </a>
+      </router-link>
     </div>
   </div>
 </template>
