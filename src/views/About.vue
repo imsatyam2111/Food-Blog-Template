@@ -6,8 +6,8 @@
 </template>
 
 <script>
-import AboutMe from "@/components/About/AboutMe.vue";
-import ContactMe from "@/components/About/ContactMe.vue";
+import AboutMe from "@/components/about/AboutMe.vue";
+import ContactMe from "@/components/about/ContactMe.vue";
 export default {
   components: {
     AboutMe,
