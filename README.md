@@ -1,4 +1,6 @@
-# food-blog
+# The-Food-Blogger
+
+A place created for foodies which gives them numerous Blogs to read on different delicious food and water their mouth
 
 ## Project setup
 ```
