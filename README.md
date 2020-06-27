@@ -1,6 +1,6 @@
-# The-Food-Blogger
+# [The-Food-Blogger](the-food-blogger.netlify.app)
 
-A place created for foodies which gives them numerous Blogs to read on different delicious food and water their mouth
+A place created for foodies which gives them numerous Blogs to read on different delicious food to water their mouth and express thier thoughts on it through comments.
 
 ## Project setup
 ```
