@@ -2,9 +2,9 @@
   <!-- Each Single BLog  -->
   <div id="singleBlog" class="singleBlog container mt-5 mb-4">
     <!-- Iterating over the posts -->
-    <div class="" v-for="singleBlog in posts" :key="singleBlog.id">
+    <div class="" v-for="singleBlog in posts" :key="singleBlog._id">
       <!-- Check if the id of route and blog is same or not -->
-      <div v-if="$route.params.PId == singleBlog.id">
+      <div v-if="$route.params.PId == singleBlog._id">
         <!-- Post container starts here -->
         <div class="post-container border p-lg-5 mx-auto w-100">
           <div class="mx-auto" style="width=80%;">
@@ -104,9 +104,8 @@ export default {
     };
   },
   created() {
-    let i;
-    // Dynamically name the Title as of Blog's Name
-    for (i = 0; i < this.posts.length; i++) {
+    // Dynamically name the Tab as of Blog's Name
+    for (let i = 0; i < this.posts.length; i++) {
       if (this.$route.params.PId == i) {
         for (var x in this.posts[i]) {
           if (x == "title") {

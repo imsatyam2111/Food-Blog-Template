@@ -44,7 +44,7 @@
         </div>
 
         <!-- Contact Forms -->
-        <div class="bg-warnng col-md-7 contact-form">
+        <div class="col-md-7 contact-form">
           <form>
             <!-- Input Name -->
             <label class="d-block" for="name"

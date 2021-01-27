@@ -24,6 +24,7 @@
 import Header from "@/components/layout/Header.vue";
 import NavigationMain from "@/components/layout/NavigationMain.vue";
 import Subscribe from "@/components/Subscribe.vue";
+import PostService from "@/PostService.js";
 
 export default {
   components: {
@@ -33,7 +34,8 @@ export default {
   },
   data() {
     return {
-      posts: [
+      posts: [],
+      /*[
         {
           id: 1,
           source: "../assets/blogPost/dummy2.jpg",
@@ -152,9 +154,20 @@ export default {
           views: 209
         }
       ]
+      */
     };
+  },
+  async created() {
+    try {
+      this.posts = await PostService.getPosts();
+      this.posts.reverse();
+      console.log(this.posts)
+    } catch(err) {
+      console.log(err)
+    }
   }
-};
+
+}
 </script>
 
 <style>

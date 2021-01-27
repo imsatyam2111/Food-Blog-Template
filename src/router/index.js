@@ -34,13 +34,21 @@ const routes = [
     }
   },
   {
-    path: "/single-blog/:PId",
+    path: "/blogs/blog/id?=:PId",
     name: "Single-Blog",
     component: () => import("../components/Single-Blog/singleBlog.vue"),
     meta: {
       title: "The Food Blogger | "
     },
     props: { default: true }
+  },
+  {
+    path: "/create",
+    name: "CreatePost",
+    component: () => import("../components/CreatePost.vue"),
+    meta: {
+      title: "The Food Blogger | Create Post"
+    }
   }
 ];
 

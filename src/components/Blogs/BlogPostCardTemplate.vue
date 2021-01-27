@@ -30,7 +30,7 @@
           </div>
 
           <!-- Card Blog-Titile -->
-          <router-link :to="{ name: 'Single-Blog', params: { PId: post.id } }">
+          <router-link :to="{ name: 'Single-Blog', params: { PId: post._id } }">
             <h4 class="blog-title">{{ post.title }}</h4>
           </router-link>
           <!-- Blog Description -->
@@ -51,7 +51,7 @@
             <!-- Add a Comment  -->
             <small class="comment col-4 text-center  text-muted">
               <router-link
-                :to="{ name: 'Single-Blog', params: { PId: post.id } }"
+                :to="{ name: 'Single-Blog', params: { PId: post._id } }"
               >
                 <span class="d-none d-xl-block">Add a comment</span>
                 <span class="d-xl-none">
