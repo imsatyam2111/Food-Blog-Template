@@ -2,7 +2,7 @@
   <div class="veg-blogs row">
     <div class="all-posts row mt-4">
       <!-- Iterate over the vegetarian blogs -->
-      <div class="col-lg-6 mb-4" v-for="post in blogs" :key="post.id">
+      <div class="col-lg-6 mb-4" v-for="post in blogs" :key="post._id">
         <div v-if="post.category == 'vegetarian'">
           <BlogPostCardTemplate v-bind:post="post" />
         </div>

@@ -1,9 +1,9 @@
 <template>
   <div>
     <!-- Loop in the posts and show post on homepage -->
-    <div v-for="post in posts" :key="post.id">
+    <div v-for="( post, index ) in posts" :key="post._id">
       <!-- Show only 4 posts on the homepage -->
-      <div v-if="post.id <= 4">
+      <div v-if="index < 4">
         <HomePostCardTemplate :post="post" />
       </div>
     </div>
