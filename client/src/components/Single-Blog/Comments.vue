@@ -90,28 +90,28 @@ export default {
           commentNum: 1,
           email: "ss1234@gmail.com",
           name: "user 1",
-          comment: "this is a comment"
+          comment: "this is comment one"
         },
         {
           commentId: 2,
           commentNum: 2,
           email: "skj234@gmail.com",
           name: "user 2",
-          comment: "this is a comment 2nd"
+          comment: "this is comment two"
         },
         {
           commentId: 3,
           commentNum: 3,
           email: "skj234@gmail.com",
           name: "user 2",
-          comment: "this is a comment 2nd"
+          comment: "this is comment three"
         },
         {
           commentId: 3,
           commentNum: 4,
           email: "ss12355484@gmail.com",
           name: "user 3",
-          comment: "thsi is a comment 3rd"
+          comment: "this is comment four"
         }
       ]
     };
